@@ -2,25 +2,34 @@
   "name": "letterbook",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start:dev": "nodemon --watch src --exec ts-node src/server.ts"
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc",
+    "start:dev": "nodemon --watch src --exec ts-node src/server.ts",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "prettier": "prettier --ignore-path .gitignore --write \"./src/**/*.+(js|ts|json)\"",
+    "prettier:fix": "prettier --write src"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@types/express": "^4.17.21",
-    "@types/graphql": "^14.5.0",
-    "@types/node": "^20.14.9",
+    "dotenv": "^16.4.5",
     "express": "^4.19.2",
-    "express-graphql": "^0.12.0",
-    "graphql": "^16.9.0",
-    "graphql-tools": "^9.0.1",
-    "nodemon": "^3.1.4",
+    "prettier": "^3.3.2",
     "ts-node": "^10.9.2",
-    "typescript": "^5.5.3",
     "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.6.0",
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.14.10",
+    "eslint": "^9.6.0",
+    "globals": "^15.8.0",
+    "nodemon": "^3.1.4",
+    "typescript": "^5.5.3",
+    "typescript-eslint": "^7.16.0"
   }
 }
