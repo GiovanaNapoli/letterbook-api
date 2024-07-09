@@ -10,7 +10,9 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "prettier": "prettier --ignore-path .gitignore --write \"./src/**/*.+(js|ts|json)\"",
-    "prettier:fix": "prettier --write src"
+    "prettier:fix": "prettier --write src",
+    "husky:prepare": "husky",
+    "prepare": "husky"
   },
   "keywords": [],
   "author": "",
@@ -28,6 +30,8 @@
     "@types/node": "^20.14.10",
     "eslint": "^9.6.0",
     "globals": "^15.8.0",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.7",
     "nodemon": "^3.1.4",
     "typescript": "^5.5.3",
     "typescript-eslint": "^7.16.0"
