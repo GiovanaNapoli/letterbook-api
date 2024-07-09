@@ -43,6 +43,9 @@ devDependencies:
   eslint-plugin-prettier:
     specifier: ^5.1.3
     version: 5.1.3(eslint-config-prettier@9.1.0)(eslint@9.6.0)(prettier@3.3.2)
+  git-commit-msg-linter:
+    specifier: ^5.0.8
+    version: 5.0.8
   globals:
     specifier: ^15.8.0
     version: 15.8.0
@@ -1478,6 +1481,14 @@ packages:
     engines: {node: '>=18'}
     dev: true
 
+  /commit-msg-linter@1.0.0:
+    resolution: {integrity: sha512-Di9oAjfjIwAcASQ8abW1936twemUdDQq4D1dBL42Y+S6rNXykauIBPztj8Ej4/MjI6zIziLVzfhmdkg0z4I4rg==}
+    engines: {node: '>= 8.0.0'}
+    dependencies:
+      did-you-mean: 0.0.1
+      supports-color: 8.1.1
+    dev: true
+
   /concat-map@0.0.1:
     resolution: {integrity: sha512-/Srv4dswyQNBfohGpz9o6Yb3Gz3SrUDqBH5rTuhGR7ahtlbYKnVxw2bCFMRljaA7EXHaXZ8wsHdodFvbkhKmqg==}
     dev: true
@@ -1602,6 +1613,13 @@ packages:
   /detect-newline@3.1.0:
     resolution: {integrity: sha512-TLz+x/vEXm/Y7P7wn1EJFNLxYpUD4TgMosxY6fAVJUnJMbupHBOncxyWUG9OpTaH9EBD7uFI5LfEgmMOc54DsA==}
     engines: {node: '>=8'}
+    dev: true
+
+  /did-you-mean@0.0.1:
+    resolution: {integrity: sha512-rKxPpbrHr4/u8VMPde6Z3DhbGoXw7kepHZIU2FGs+IU+LKnhEIlw1cx80FZ7fLruJXDyu0slKMai2FhPRZjwxQ==}
+    dependencies:
+      levenshtein: 1.0.5
+      underscore: 1.13.6
     dev: true
 
   /diff-sequences@29.6.3:
@@ -2077,6 +2095,16 @@ packages:
   /get-stream@8.0.1:
     resolution: {integrity: sha512-VaUJspBffn/LMCJVoMvSAdmscJyS1auj5Zulnn5UoYcY531UWmdwhRWkcGKnGU93m5HSXP9LP2usOryrBtQowA==}
     engines: {node: '>=16'}
+    dev: true
+
+  /git-commit-msg-linter@5.0.8:
+    resolution: {integrity: sha512-buif1Hfo3barMYIOz9kKbyD6upC4/bQSDVPuGMIXho3bAgaTCG0fPhOVq9JAFf9XAfcpRWqgIK1Q+BB7exNdFA==}
+    engines: {node: '>= 14.0.0'}
+    hasBin: true
+    requiresBuild: true
+    dependencies:
+      chalk: 2.4.2
+      commit-msg-linter: 1.0.0
     dev: true
 
   /glob-parent@5.1.2:
@@ -2870,6 +2898,11 @@ packages:
   /leven@3.1.0:
     resolution: {integrity: sha512-qsda+H8jTaUaN/x5vzW2rzc+8Rw4TAQ/4KjB46IwK5VH+IlVeeeje/EoZRpiXvIqjFgK84QffqPztGI3VBLG1A==}
     engines: {node: '>=6'}
+    dev: true
+
+  /levenshtein@1.0.5:
+    resolution: {integrity: sha512-UQf1nnmxjl7O0+snDXj2YF2r74Gkya8ZpnegrUBYN9tikh2dtxV/ey8e07BO5wwo0i76yjOvbDhFHdcPEiH9aA==}
+    engines: {'0': node >=0.2.0}
     dev: true
 
   /levn@0.4.1:
@@ -3850,6 +3883,10 @@ packages:
 
   /undefsafe@2.0.5:
     resolution: {integrity: sha512-WxONCrssBM8TSPRqN5EmsjVrsv4A8X12J4ArBiiayv3DyyG3ZlIg6yysuuSYdZsVz3TKcTg2fd//Ujd4CHV1iA==}
+    dev: true
+
+  /underscore@1.13.6:
+    resolution: {integrity: sha512-+A5Sja4HP1M08MaXya7p5LvjuM7K6q/2EaC0+iovj/wOcMsTzMvDFbasi/oSapiwOlt252IqsKqPjCl7huKS0A==}
     dev: true
 
   /undici-types@5.26.5:
